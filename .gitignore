@@ -1,5 +1,5 @@
-./database
-./keys
-./logs
+database/
+keys/
+logs/
 .vscode/
 __pycache__/
