@@ -1,0 +1,31 @@
+
+{
+    "logging" : {
+        "level" : "info",
+        "writers" : [ {
+            "file" : {
+                "args" : {
+                    "path" : "C:\\Users\\chorl\\code\\kraken\\logs\\bitwaster.log"
+                }
+            }
+        }, {
+            "console" : {
+                "args" : {}
+            }
+        }
+        ]
+    },
+    "database" : {
+        "db_url" : ""
+    },
+    "ticker_data_source" : {
+        "source" : "kraken",
+        "key" : "./keys/kraken.key"
+    }, 
+    "plugins" : {
+        "load" : [
+            "./plugins/ta/macd",
+            "./ui/keyboard"
+        ]
+    }
+}

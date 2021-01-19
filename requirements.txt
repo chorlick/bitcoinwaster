@@ -1,0 +1,5 @@
+krakenex
+pandas
+msvcrt
+ta
+sqlalchemy
