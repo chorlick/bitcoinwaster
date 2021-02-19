@@ -1,0 +1,45 @@
+{
+    "logging": {
+        "writers": [
+            {
+                "format": "%(asctime)s: %(message)s",
+                "type": "file",
+                "path": "C:\\Users\\chorl\\code\\kraken\\logs\\bitwaster.log",
+                "level": "info"
+            },
+            {
+                "format": "%(asctime)s: %(message)s",
+                "type": "console",
+                "level": "debug"
+            }
+        ]
+    },
+    "database": {
+        "db_url": "persistance\\bitcoindb.py"
+    },
+    "plugins": {
+        "load": {
+            "modules": [
+                {
+                    "name": "macd",
+                    "path": "ta/macd" 
+                },
+                {
+                    "name": "kraken",
+                    "path": "tickers/bitcointicker"
+                }
+            ]
+        }
+    }, 
+    "args" : {
+        "macd" : {
+            "period" : "30",  
+            "inverval" : "second"
+        }, 
+        "kraken" : {
+            "coins" :[
+                "BTCUSD"
+            ]
+        }
+    }
+}

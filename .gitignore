@@ -1,0 +1,5 @@
+database/
+keys/
+logs/
+.vscode/
+__pycache__/

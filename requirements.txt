@@ -1,0 +1,6 @@
+krakenex
+pandas
+msvcrt
+ta
+sqlalchemy
+python-json-config

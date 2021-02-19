@@ -1,0 +1,1 @@
+BITWASTER_DESCRIPTION = "Daemon to monitor bitcoin prices and do technical analysis"
